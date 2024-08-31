@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+       <!--Navbar-->
+       <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">Greenden</h1>
+        <div class="md:hidden"><i  id="menuicon" class="fa-solid fa-bars" style="color: #00040a;"></i></div>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li><a href="C:\Fullstack\TailWindCSS\public\index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="C:\Fullstack\TailWindCSS\public\product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="C:\Fullstack\TailWindCSS\public\contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+
+        <ul class="flex flex-col items-center gap-10 text-gray-600">
+            <li><a href="C:\Fullstack\TailWindCSS\public\index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="C:\Fullstack\TailWindCSS\public\product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="C:\Fullstack\TailWindCSS\public\contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+
+    </section>
+
+    <!--Plants-->
+    <section class="p-4 text-center">
+            <h1 class="text-3xl font-bold mt-5 text-center">Our Products</h1>
+            <input type="text" placeholder="Search for the products" id="search" class="border border-black mt-3 p-2 mb-5"  style="width:55%">
+
+        <div id="productcontainer" class="grid grid-cols-2 md:grid-cols-4 mt-8 gap-5">
+            <div>
+                <img src="pd-5.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Silk Palm Plant</h1>
+                <p>$90</p>
+            </div>
+
+            <div>
+                <img src="pd-6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Chamaerops Humilis</h1>
+                <p>$60</p>
+            </div>
+
+            <div>
+                <img src="pd-7.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Money Plant</h1>
+                <p>$25</p>
+            </div>
+
+            <div>
+                <img src="pd-8.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Banana Leaf Plant</h1>
+                <p>$65</p>
+            </div>
+
+            <div>
+                <img src="pd-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Cactus</h1>
+                <p>$50</p>
+            </div>
+
+            <div>
+                <img src="pd-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>White Lily</h1>
+                <p>$50</p>
+            </div>
+
+            <div>
+                <img src="pd-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Aloe Vera Star</h1>
+                <p>$70</p>
+            </div>
+
+            <div>
+                <img src="pd-4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 mb-1">
+                <h1>Bonsai</h1>
+                <p>$100</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5 mt-5">
+        <h1 class="text-3xl font-bold">Greenden</h1>
+        <p>The standard chunk lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <p>@ 2023 Greendat.com</p>
+
+    </section>
+
+    <script src="product.js"></script>
+</body>
+
+</html>
